@@ -21,8 +21,15 @@ public class RightTriangle {
         int a = scan.nextInt();
         int b = scan.nextInt();
         int c = scan.nextInt();
-        if ()
-        System.out.println("The side lengths of "+a+" , "+b+" , and "+c+" form a right triangle");
+        if (isTriangle(a,b,c)==true && isRight(a,b,c)==true)
+            System.out.println("The side lengths of " + a + " , " + b + " , and " + c + " form a right triangle");
+
+        else if (isTriangle(a,b,c)==false)
+            System.out.println("The side lengths of "+a+" , "+b+" , and "+c+" do not form a triangle");
+
+        else if (isTriangle(a,b,c)==true && isRight(a,b,c)==false)
+            System.out.println("The side lengths of "+a+" , "+b+" , and "+c+" form a triangle, but it is not a right triangle");
+
 
     }
 
